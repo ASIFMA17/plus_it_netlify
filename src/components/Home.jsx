@@ -39,7 +39,7 @@ function Home() {
         }
         getDetails();
 
-    }, []);
+    }, [dispatch]);
 
     return (
 

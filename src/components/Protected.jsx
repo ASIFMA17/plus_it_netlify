@@ -26,7 +26,6 @@ function Protected() {
 
                 if (res.status === 200) {
                     // console.log(res.data);
-                    const message = res.data.message;
                     console.log('product geting successfully completed!');
                 }
 
@@ -36,7 +35,7 @@ function Protected() {
         }
         getDetails();
 
-    }, []);
+    }, [token]);
 
     return (
         <div className='home-margin'>

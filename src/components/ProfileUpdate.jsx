@@ -1,7 +1,7 @@
 import React from 'react';
 import './profileUpdate.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -13,7 +13,6 @@ function ProfileUpdate() {
     const token = useSelector((state) => state.user?.token ?? 'no data');
     // console.log(token);
 
-    const dispatch = useDispatch();
 
     const [focus, setFocus] = useState({
         errEmail: false,
